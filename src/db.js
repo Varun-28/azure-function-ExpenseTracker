@@ -9,11 +9,11 @@ const sqlConfig = {
     encrypt: true,
     enableArithAbort: true,
   },
-  // pool: {
-  //     max: 10,
-  //     min: 0,
-  //     idleTimeoutMillis: 30000,
-  // },
+  pool: {
+      max: 10,
+      min: 0,
+      idleTimeoutMillis: 30000,
+  },
 };
 
 const pool = new sql.ConnectionPool(sqlConfig);
